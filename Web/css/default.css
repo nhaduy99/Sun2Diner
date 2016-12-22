@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+*{
+margin: 0;
+padding: 0;
+font-size: 11px;
+color: #000;
+}
+
+p,ul,li,div{
+line-height: 1.8em;
+}
+
+img{
+border: none;
+vertical-align:bottom;
+}
+
+li{
+list-style: none;
+}
+
+a:link,a:visited,a span{
+text-decoration: none;
+color: #000;
+}
+
+a:hover{
+text-decoration: none;
+}
+
+header,nav,aside,footer,section,time,article{
+display: block;
+}
+
+.clearfix:before,.clearfix:after {
+content: " ";
+display: table;
+}
+
+.clearfix:after {
+clear: both;
+}
+
+.clearfix {
+*zoom: 1;
+}
