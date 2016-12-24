@@ -60,8 +60,10 @@
                 <h2>This is the</h2>
                 <h3>description</h3>
                 <h4>of beer</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,  </p>
-                <div class="button">
+                <div class="plain_text">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,  </p>
+                </div>
+                  <div class="button">
                   <input type="button" name="menu" value="MENU">
                 </div>
               </div>
@@ -75,28 +77,170 @@
     <div class="reservation">
       <div class="res_container">
         <h1>make a reservation</h1>
-        <ul>
-          <li>2 people</li><!--
-          --><li>Dec 1, 2016</li><!--
-          --><li>11:00 PM</li><!--
-          --><li>FIND A TABLE</li>
-        </ul>
+        <select class="people" name="">
+            <option value="1 people">2 people</option>
+            <option value="2 people">2 people</option>
+        </select><!--
+        --><select class="date" name="">
+          <option value="Dec 1, 2016">Dec 1, 2016</option>
+          <option value="Dec 2, 2016">2 people</option>
+        </select><!--
+        --><select class="time" name="">
+            <option value="11:00 PM">11:00 PM</option>
+            <option value="12:00 PM">2 people</option>
+        </select><!--
+      --><select class="table" name="">
+          <option value="FIND A TABLE">FIND A TABLE</option>
+          <option value="FIND A TABLE">2 people</option>
+        </select>
+
       </div>
     </div>
 
     <div class="news">
+      <img class= "news_tittle tittle" src="images/news_tittle.png" alt="">
       <div class="news_container">
-          <div class="arrow  clearfix">
-              <a href="#"><img id = "left_arrow" src="images/arrow_news.png" alt="" /></a>
-              <a href="#"><img id = "right_arrow" src="images/arrow_news.png" alt="" /></a>
-          </div>
-          <div class="news_tag">
-            <h1>title of the news</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-          </div>
+        <div class="news_arrow clearfix">
+          <a href="#"><img class = "left_arrow clearfix" src="images/left_arrow.png" alt="" /></a>
+          <a href="#"><img class = "right_arrow clearfix" src="images/right_arrow.png" alt="" /></a>
+        </div>
+        <img class= "news_tag" src="images/news_tag.png" alt="">
+      </div>
+      <div class="news_text">
+        <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,"</p>
       </div>
     </div>
 
+    <div class="photos">
+      <img class= "photos_tittle tittle" src="images/photo_tittle.png" alt="">
+      <div class="gallery">
+          <img class= "" src="images/photo_1.png" alt="">
+          <img class= "" src="images/photo_2.png" alt="">
+          <img class= "" src="images/photo_3.png" alt="">
+          <img class= "" src="images/photo_4.png" alt="">
+          <img class= "" src="images/photo_5.png" alt="">
+          <img class= "" src="images/photo_6.png" alt="">
+          <img class= "" src="images/photo_7.png" alt="">
+          <img class= "" src="images/photo_8.png" alt="">
+          <img class= "" src="images/photo_9.png" alt="">
+      </div>
+      <div class="photo_arrow">
+          <a href="#"><img class= "" src="images/photo_left_arrow.png" alt=""></a>
+          <a href="#"><img class= "" src="images/photo_right_arrow.png" alt=""></a>
+      </div>
+    </div>
+
+    <div class="access">
+      <img class= "access_tittle tittle" src="images/access_tittle.png" alt="">
+        <div class="map">
+          <div class="schedule">
+            <div class="date info">
+              <p>Mon-Fri</p>
+              <p>Sun,Sat, Holiday</p>
+              <p>Wed</p>
+            </div>
+            <div class="time info">
+              <p>11.00 ~ 15.00     18.00 ~ 23.00 (LO 22.00)</p>
+              <p>11.00 ~ 18.00 (LO 17.30)     18.00 ~ 23.00 (LO 22.00)</p>
+              <p>regular closing day</p>
+            </div>
+          </div>
+         <div class="address">
+              <p class = "num_text"><img src="images/pin.png" alt="">  〒153-0051  東京都目黒区上目黒2-43-11　小川ビル１F</p>
+              <p class = "num_text"><img src="images/telephone.png" alt=""> 03-5724-3330</p>
+          </div>
+          <div class="button">
+            <input type="button" name="google_map" value="GOOGLE MAPS">
+          </div>
+        </div>
+    </div>
+
+    <div class="recruit">
+        <img class= "access_tittle tittle" src="images/recruit_tittle.png" alt="">
+        <div class="recruit_board">
+          <h1>We still</h1>
+          <h2>need you</h2>
+          <div class="apply">
+            <a href="#"><h3>Apply Now</h3></a>
+          </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <img class= "contact_tittle tittle" src="images/contact_tittle.png" alt="">
+        <div class="contact_board">
+
+          <!-- <section class = "text_line">
+            <h2>お名前</h2>
+            <h2>ふりがな</h2>
+            <h2>メールアドレス</h2>
+            <h2>電話番号</h2>
+            <h2>お問合わせ内容</h2>
+          </section>
+
+        <section class = "fill_line">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </section> -->
+          <div class="form">
+            <div class="what">
+              <h2>お名前</h2>
+            </div>
+            <div class="line"></div>
+          </div>
+
+          <div class="form">
+            <div class="what">
+              <h2>ふりがな</h2>
+            </div>
+            <div class="line"></div>
+          </div>
+
+          <div class="form">
+            <div class="what">
+            <h2>メールアドレス</h2>
+            </div>
+            <div class="line"></div>
+          </div>
+
+          <div class="form">
+            <div class="what">
+              <h2>電話番号</h2>
+            </div>
+            <div class="line"></div>
+          </div>
+
+          <div class="form form_last">
+            <div class="what">
+                <h2>お問合わせ内容</h2>
+            </div>
+            <div class="line"></div>
+          </div>
+
+          <div class="button">
+            <input type="submit" name="submit" value="SUBMIT">
+          </div>
+        </div>
+    </div>
+
+    <div class="footer">
+      <div class="logo_side">
+          <img src="images/logo_footer.png" alt="">
+      </div>
+      <div class="network">
+        <img src="images/facebook_logo.png" alt="">
+        <img src="images/instagram_logo.png" alt="">
+        <img src="images/twitter_logo.png" alt="">
+      </div>
+      <div class="back_side">
+        <a href="#"><p>back to top</p></a>
+      </div>
+
+
+    </div>
 
   </body>
 </html>

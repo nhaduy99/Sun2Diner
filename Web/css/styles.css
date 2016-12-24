@@ -161,12 +161,14 @@ nav ul li{
   color: white;
   padding: 15px 0;
 }
-.drink_text p{
-  text-align:right;
-  /*padding: 0;
-  margin: 0;*/
-  position: absolute;
-  right: 0;
+.plain_text{
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+  width: 50%;
+}
+.plain_text p{
+  width: 100%;
 }
 
 .description input{
@@ -207,7 +209,7 @@ nav ul li{
    position: relative
 }
 
-
+/*===== RESERVATION =====*/
 .reservation *
 {
   color: white;
@@ -235,7 +237,7 @@ nav ul li{
   padding-top: 10px 0 auto;
 }
 
-.reservation ul{
+/*.reservation ul{
   text-align: center;
   margin: 0;
   padding: 0;
@@ -256,36 +258,243 @@ nav ul li{
 }
 .reservation li:last-child{
   border-right:1px solid white  ;
+}*/
+
+/**/
+.res_container select{
+  width: 25%;
+  background-color: black;
+  font-size: 18px;
 }
 
+
+/**/
+/*==== NEWS ====*/
 .news{
   width: 100%;
-  height: 600px;
+  text-align: center;
   background-image: url('../images/news_bg.png');
+}
+.news_tittle{
+  padding-bottom: 20px;
+}
+.news_container{
+  width: 100%;
+  display: inline-block;
   position: relative;
+  text-align: center;
+  padding: 30px 0;
 }
 
-.news_container
-{
-  width: 100%;
-  position: absolute;;
-  width: 100%;
-  text-align: center;
-  margin: 0;
+.news_arrow{
+  position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%) }
+  transform: translate(-50%, -50%);
+  width: 75%;
 }
-.arrow{
-
+.left_arrow{
+  float: left;
+}
+.right_arrow{
+  float: right;
 }
 .news_tag{
   width: 60%;
-  border: 2px solid white;
+}
+
+.news_text{
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.news_text p{
+  text-align: justify;
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+/*=======GALLERY======*/
+.photos{
+  text-align: center;
+}
+.photos_tittle{
+  padding-bottom: 30px;
+}
+.gallery img{
+  padding: 0 0  20px 20px;
+  margin: 0;
+}
+.photo_arrow img{
+  padding: 10px 70px;
+}
+/*=======ACCESS======*/
+.access{
+  text-align: center;
+}
+.access_tittle{
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.map{
+  background-image: url('../images/access_bg.png');
+  height: 600px;
+}
+.schedule{
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 85px;
+  padding-bottom: 100px;
+  padding-left: 200px;
+
+}
+.schedule div{
+  display: inline-block;
+  text-align: center;
+}
+
+.info p{
+  text-align: left;
+}
+.date{
+  width: 25%;
+}
+.time{
+  width: 70%;
+}
+
+.map p{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  padding: 10px 0;
+}
+.address{
+  padding: 5px 0;
+}
+
+.button input{
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: transparent;
+  border:solid white 2px;
+  font-weight: bolder;
+  margin: 15px 0;
+  padding: 15px 30px;
+}
+/*===== Recruit ======*/
+.recruit{
+  text-align: center;
+  background-image: url('../images/recruit_bg.png');
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+}
+.recruit_board{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 60%;
+  border: solid 2px white;
+  padding-bottom: 30px;
+}
+.recruit_board *{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 15px;
+}
+.recruit_board h1{
+  padding-top: 100px;
+  font-size: 80px;
+  font-weight: bolder;
+}
+.recruit_board h2{
+  font-size: 65px;
+}
+
+.recruit_board h3{
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    letter-spacing: 0px;
+}
+.apply{
+  width: 20%;
+  border-bottom: solid 1px white;
+  margin:  30px auto;
+}
+
+/*===== CONTACT =====*/
+.contact{
+  background-image: url('../images/contact_bg.png');
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.contact h2{
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+}
+.contact_board{
+  padding-top: 50px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form{
+  padding-top: 30px;
+}
+.form *{
+  display: inline-block;
+}
+.form div{
+  text-align: right;
+}
+
+.what{
+  width: 25%;
+  padding-right: 15px;
 }
 
 
+.line{
+  padding-left: 50px;
+  width: 50%;
+  border-bottom: solid 2px white;
+  text-align: right;
+}
+.form_last{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/*===== FOOTER =====*/
+.footer{
+  height: 50px;
+  padding-top: 10px;
+  background-color: #ec9200;
+
+
+}
+.footer div{
+  display: inline-block;
+  width: 33%;
+    text-align: center;
+}
+
+.network img{
+  padding-left: 10px;
+}
+
+.back_side p{
+  color: white;
+  font-size: 15px;
+}
 
 /*--------------------------------*/
 .clearfix:before,.clearfix:after {
