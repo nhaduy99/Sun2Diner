@@ -237,30 +237,6 @@ nav ul li{
   padding-top: 10px 0 auto;
 }
 
-/*.reservation ul{
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-.reservation li{
-  width: 25%;
-  font-size: 15px;
-  display: inline-block;
-  border: 1px solid white  ;
-  box-sizing: border-box;
-  padding: 10px 6px;
-  margin: 0;
-  text-align: left;
-  background-image: url('../images/arrow.png');
-  background-repeat: no-repeat;
-  background-position: right ;
-  border-right: none;
-}
-.reservation li:last-child{
-  border-right:1px solid white  ;
-}*/
-
-/**/
 .res_container select{
   width: 25%;
   background-color: black;
