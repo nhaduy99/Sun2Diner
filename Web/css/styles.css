@@ -3,6 +3,9 @@ body, html{
   padding: 0;
   max-width: 1280px;
   text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: grey;
 }
 .banner{
   position: relative;
@@ -24,7 +27,7 @@ body, html{
   min-width: 100%;
   min-height: 100%;
   z-index: 10;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.2);
 }
 
 .logo img{
@@ -40,6 +43,17 @@ body, html{
   transform: translate(-50%, -50%) ;
 }
 
+.sandwich{
+  width: 8%;
+  position: absolute;
+  z-index: 20;
+  top: 20px;
+  right: 20px;
+  -webkit-filter: brightness(110%); /* Safari */
+    filter: brightness(110%);
+    display: none;
+}
+/*-------------Navigator-------------*/
 nav{
   margin: auto;
   padding: 0px 0;
@@ -72,19 +86,17 @@ nav ul li{
 .food_drink{
   width: 100%;
   background-image: url('../images/food_bg.png');
-  /*-webkit-filter: brightness(0.3);
-      filter: brightness(0.3);*/
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
   color: white;
   font-family: 'Open Sans', sans-serif;
   position: relative;
-
 }
+
 .menu{
   width: 100%;
-  height: 770px;
+  height: 800px;
   position: relative;
   padding: 0;
   margin: 0;
@@ -95,20 +107,15 @@ nav ul li{
 .tittle{
   padding: 30px 0 0 0 ;
   margin: 0;
-  //position: absolute;
   z-index: 100;
 }
-/*
-.food_tittle{
-    top: 30px;
-}
 .drink_tittle{
-    top: 30px;
-}*/
+    padding: 0;
+}
 
 .description
 {
-  width: 70%;
+  width: 80%;
   line-height: 50px;
   letter-spacing: 15px;
   padding: 0px 0;
@@ -116,19 +123,20 @@ nav ul li{
   text-transform: uppercase;
   text-align: left;
   font-weight: bold;
+  z-index: 10;
 }
 .food_text{
   float: left;
   position: absolute;
-  top: 170px;
-  left: 170px;
+  top: 150px;
+  left: 12%;
 }
 .drink_text{
   text-align: right;
   float: right;
   position: absolute;
-  top: 170px;
-  right: 100px;
+  top: 130px;
+  right: 12%;
 }
 .description *{
   color: white;
@@ -137,14 +145,14 @@ nav ul li{
   font-size: 88px;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .description h2{
   font-size: 70px;
+  margin-bottom: 20px;
 }
 .description h3{
   font-size: 44px;
-
 }
 .description h4{
   font-size: 35px;
@@ -152,19 +160,22 @@ nav ul li{
 .description p{
   font-family: 'PT Sans', sans-serif;
   font-size: 20px;
+  font-weight: lighter;
   line-height: 20px;
   text-transform: none;
   text-align: justify;
   width: 50%;
   letter-spacing: normal;
-  font-weight: normal;
   color: white;
-  padding: 15px 0;
+  padding: 5px 0;
 }
-.plain_text{
+.plain_text_drink{
   text-align: right;
   margin-right: 0;
   margin-left: auto;
+  width: 50%;
+}
+.plain_text_food{
   width: 50%;
 }
 .plain_text p{
@@ -197,19 +208,18 @@ nav ul li{
 .drink_image
 {
   float: left;
-  top: -150px;
+  top: -13%;
   left: 0px;
 }
 
 
+/*===== RESERVATION =====*/
 .reservation{
   background-color: black;
   height: 200px;
   vertical-align: middle;
    position: relative
 }
-
-/*===== RESERVATION =====*/
 .reservation *
 {
   color: white;
@@ -278,27 +288,43 @@ nav ul li{
 .news_tag{
   width: 60%;
 }
-
+.news_tag_mobile{
+  display: none;
+}
 .news_text{
   width: 60%;
   margin: 0 auto;
-  padding: 30px 0;
 }
 .news_text p{
   text-align: justify;
   font-size: 18px;
   padding-bottom: 50px;
+  line-height: normal;
+}
+.sub_news_arrow{
+  display: none;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*=======GALLERY======*/
 .photos{
   text-align: center;
+  background-color: white;
 }
 .photos_tittle{
   padding-bottom: 30px;
 }
+.gallery{
+  margin-left: auto;
+  margin-right: auto;
+}
 .gallery img{
   padding: 0 0  20px 20px;
   margin: 0;
+  transform: skew(-3deg, -3deg);
+  width: 25%;
+  padding: 25px 20px;
 }
 .photo_arrow img{
   padding: 10px 70px;
@@ -306,6 +332,7 @@ nav ul li{
 /*=======ACCESS======*/
 .access{
   text-align: center;
+  background-color: white;
 }
 .access_tittle{
   padding-top: 50px;
@@ -316,48 +343,57 @@ nav ul li{
   height: 600px;
 }
 .schedule{
-  width: 50%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-top: 85px;
   padding-bottom: 100px;
-  padding-left: 200px;
-
+}
+.schedule_mobile{
+  display: none;
 }
 .schedule div{
   display: inline-block;
   text-align: center;
+  vertical-align: top;
 }
 
 .info p{
   text-align: left;
 }
 .date{
+  width: 18%;
+}
+.info1{
+  width: 22%;
+}
+.info2{
   width: 25%;
 }
-.time{
-  width: 70%;
-}
-
 .map p{
   color: white;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
+  font-weight: bold;
   padding: 10px 0;
 }
 .address{
   padding: 5px 0;
 }
 
+.address p{
+  font-weight: normal;
+}
+
 .button input{
   color: white;
-  font-weight: bold;
+  font-weight:lighter;
   font-size: 15px;
   background-color: transparent;
   border:solid white 2px;
-  font-weight: bolder;
   margin: 15px 0;
-  padding: 15px 30px;
+  padding: 15px 40px;
+  letter-spacing: 3px;
 }
 /*===== Recruit ======*/
 .recruit{
@@ -398,7 +434,7 @@ nav ul li{
     letter-spacing: 0px;
 }
 .apply{
-  width: 20%;
+  width: 120px;
   border-bottom: solid 1px white;
   margin:  30px auto;
 }
@@ -433,17 +469,24 @@ nav ul li{
 }
 
 .what{
-  width: 25%;
+  width: 30%;
   padding-right: 15px;
 }
-
+.contact_submit input{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 .line{
   padding-left: 50px;
+  padding-top: 20px;
   width: 50%;
+  background-color: rgba(0,0,0,0);
+  border: none;
   border-bottom: solid 2px white;
   text-align: right;
 }
+
 .form_last{
   padding-top: 50px;
   padding-bottom: 50px;
@@ -471,7 +514,657 @@ nav ul li{
   color: white;
   font-size: 15px;
 }
+/*----------Responsive mode-----------*/
+@media only screen and (max-width: 1024px){
 
+body, html{
+    max-width: 1024px;
+}
+  .banner{
+    height: 500px;
+  }
+.banner video{
+  display: none;
+}
+.gif_image{
+  width: 100%;
+  min-height: 530px;
+}
+.sandwich{
+  display: inline-block;
+}
+/*--------------nav---------*/
+nav ul{
+  display: none;
+}
+/*--------Menu--------------*/
+.menu{
+  height: 600px;
+}
+.description
+{
+  width: 90%;
+  line-height: 40px;
+  letter-spacing: 12px;
+}
+.food_text{
+  float: left;
+  position: absolute;
+  left: 10%;
+}
+.drink_text{
+  right: 10%;
+}
+
+.description h1{
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+.description h2{
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.description h3{
+  font-size: 40px;
+}
+.description h4{
+  font-size: 30px;
+}
+.description p{
+
+}
+.plain_text_drink{
+  width: 60%;
+}
+.plain_text_food{
+  width: 60%;
+}
+.plain_text p{
+  width: 100%;
+}
+
+.side_image{
+  width: 40%;
+}
+.side_image img{
+  width: 100%;
+}
+.drink_image
+{
+  top: -30px;
+}
+/*===== RESERVATION =====*/
+.res_container{
+  width: 90%;
+}
+
+/*=======GALLERY======*/
+.photos_tittle{
+  padding-bottom: 30px;
+}
+.gallery img{
+  padding-bottom: 30px;
+  padding-right: 1%;
+  width: 40%;
+  transform: skew(-2deg, -2deg);
+}
+.gallery img:last-child{
+  display: none;
+}
+/*-------------------Recruit--------------*/
+.recruit_board h1{
+  font-size: 70px;
+}
+.recruit_board h2{
+  font-size: 55px;
+}
+
+.recruit_board{
+  width: 65%;
+}
+
+.recruit_board *{
+  letter-spacing: 12px;
+}
+
+/*==== NEWS ====*/
+.news_tittle{
+  padding-bottom: 20px;
+}
+.news_arrow{
+  width: 90%;
+}
+
+.news_tag{
+  width: 70%;
+}
+
+.news_text{
+  width: 70%;
+}
+/*=======ACCESS======*/
+.map{
+  height: 630px;
+}
+.schedule{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 85px;
+  padding-bottom: 100px;
+  padding-left: 10%;
+}
+.schedule div{
+  display: inline-block;
+  text-align: center;
+}
+
+.date{
+  width: 25%;
+}
+.time{
+  width: 33%;
+}
+/*-------------------Recruit--------------*/
+.recruit_board h1{
+  font-size: 70px;
+}
+.recruit_board h2{
+  font-size: 55px;
+}
+
+.recruit_board{
+  width: 80%;
+}
+
+.recruit_board *{
+  letter-spacing: 12px;
+}
+}
+/*----------Responsive mode-----------*/
+@media only screen and (max-width: 800px){
+  body, html{
+    max-width: 800px;
+  }
+  .banner{
+    height: 400px;
+  }
+.banner video{
+  display: none;
+}
+.gif_image{
+ min-height: 450px;
+}
+/*-------------Access-----------------*/
+.schedule{
+  width: 100%;
+  padding-left: 0;
+}
+
+}
+/*----------Responsive mode-----------*/
+@media only screen and (max-width: 610px){
+  body, html{
+    max-width: 800px;
+  }
+  .banner{
+    height: 370px;
+  }
+.banner video{
+  display: none;
+}
+.gif_image{
+ min-height: 400px;
+}
+.logo img{
+  width: 50%;
+}
+/*----------Food-Drink----------------*/
+.food_drink{
+   background-repeat: repeat;
+}
+.menu{
+  width: 100%;
+  height: 820px;
+}
+.tittle{
+  width: 30%;
+}
+
+.food_tittle{
+  position: absolute;
+  top: 10px;
+  left: 25px;
+}
+
+.drink_tittle{
+  position: absolute;
+  top: 10px;
+  right: 25px;
+}
+
+.description
+{
+  line-height: 30px;
+  letter-spacing: 5px;
+  width: 95%;
+}
+.food_text{
+  top: 450px;
+  left: 15px;
+}
+.drink_text{
+  top: 450px;
+  right: 15px;
+}
+
+.description h1{
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.description h2{
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+.description h3{
+  font-size: 26px;
+}
+.description h4{
+  font-size: 20px;
+}
+.description p{
+  font-size: 16px;
+  line-height: 15px;
+}
+.plain_text{
+  width: 85%;
+}
+
+.description input{
+  color: white;
+  font-size: 15px;
+  background-color: transparent;
+  border:solid white 2px;
+  font-weight: bolder;
+  margin: 15px 0;
+  padding: 15px 30px;
+}
+
+.side_image{
+  width: 70%;
+}
+.side_image img{
+  width: 100%;
+}
+
+.drink_image
+{
+  float: left;
+  top:  0px;
+  left: 0px;
+}
+/*===== RESERVATION =====*/
+.reservation{
+}
+.reservation *
+{
+  color: white;
+  margin: 0;
+  padding: 3px 0;
+  vertical-align: middle;
+}
+.res_container h1{
+    margin-top: 50px;
+}
+.res_container{
+  width: 90%;
+
+}
+
+.res_container select{
+  width: 100%;
+}
+
+/*==== NEWS ====*/
+
+.news_arrow{
+display: none;
+}
+
+.news_tag{
+display: none;
+}
+.news_tag_mobile{
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news_text{
+  width: 90%;
+  margin: 0 auto;
+}
+.news_text p{
+  padding-bottom: 30px;
+}
+.sub_news_arrow{
+  display: inline-block;
+  width: 30%;
+  padding-bottom: 30px;
+}
+
+/*-----------Photos-----------*/
+.gallery{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery img{
+  width: 100%;
+  padding-left: 0;
+}
+
+/*--------Maps---------*/
+.map{
+  height: 600px;
+}
+.schedule{
+  width: 100%;
+  padding-top: 85px;
+  padding-bottom: 50px;
+  padding-left: 5px;
+}
+.schedule div{
+  vertical-align: top;
+}
+
+.date{
+  width: 25%;
+}
+.time{
+  width: 30%;
+}
+
+.map p{
+  font-size: 14px;
+}
+.address{
+  padding: 5px 0;
+}
+
+.address p{
+  font-weight: normal;
+}
+/*===== Recruit ======*/
+.recruit{
+  padding-bottom: 50px;
+}
+.recruit_board{
+  margin-top: 0px;
+  margin-bottom:0px;
+  width: 90%;
+  padding-bottom: 20px;
+}
+.recruit_board *{
+  line-height: 15px;
+  letter-spacing: 10px;
+}
+.recruit_board h1{
+  padding-top: 50px;
+  font-size: 50px;
+}
+.recruit_board h2{
+  font-size: 45px;
+}
+
+.recruit_board h3{
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    letter-spacing: 0px;
+}
+/*===== CONTACT =====*/
+.contact{
+  padding-bottom: 10px;
+}
+.contact h2{
+  font-size: 16px;
+}
+.contact_board{
+  padding-top: 20px;
+  width: 95%;
+}
+.form{
+  padding-top: 20px;
+}
+
+.what{
+  width: 35%;
+  padding-right: 10px;
+}
+.contact_submit input{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.line{
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 55%;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  border-bottom: solid 2px white;
+  text-align: right;
+}
+
+.form_last{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/*===== FOOTER =====*/
+.footer{
+  height:auto;
+}
+.logo_side{
+  float: left;
+}
+.network{
+  float: right;
+}
+.back_side{
+  width: 100% !important;
+}
+
+
+}
+/*----------Responsive mode-----------*/
+@media only screen and (max-width: 380px){
+
+  body, html{
+      max-width: 375px;
+  }
+  .banner{
+      height: 300px;
+    }
+  .banner video{
+    display: none;
+  }
+  .gif_image{
+    width: 100%;
+   min-height: 300px;
+  }
+  .logo img{
+    width: 50%;
+  }
+
+/*--------------menu-------------*/
+.food_drink{
+   background-repeat: repeat;
+}
+.menu{
+  width: 100%;
+  height: 800px;
+}
+.tittle{
+  width: 30%;
+}
+
+.food_tittle{
+  position: absolute;
+  top: 10px;
+  left: 25px;
+}
+
+.drink_tittle{
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+.description
+{
+  line-height: 30px;
+  letter-spacing: 10px;
+  width: 100%;
+}
+.food_text{
+  top: 450px;
+  left: 30px;
+}
+.drink_text{
+  top: 450px;
+  right: 30px;
+}
+
+.description h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.description h2{
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.description h3{
+  font-size: 22px;
+}
+.description h4{
+  font-size: 20px;
+}
+.description p{
+  font-size: 16px;
+  line-height: 15px;
+}
+.plain_text{
+  width: 85%;
+}
+.description input{
+  color: white;
+  font-size: 15px;
+  background-color: transparent;
+  border:solid white 2px;
+  font-weight: bolder;
+  margin: 15px 0;
+  padding: 15px 30px;
+}
+
+.side_image{
+  width: 80%;
+}
+.side_image img{
+  width: 100%;
+}
+
+.drink_image
+{
+  float: left;
+  top:  0px;
+  left: 0px;
+}
+}
+
+/*----------Responsive mode-----------*/
+@media only screen and (max-width: 320px){
+  /*--------------menu-------------*/
+.menu{
+  height: 750px;
+}
+  .description
+  {
+    letter-spacing: 5px;
+  }
+  .food_text{
+    top: 400px;
+    left: 10px;
+  }
+  .drink_text{
+    top: 400px;
+    right: 10px;
+  }
+/*--------------Photos-------------------*/
+.photo_arrow img{
+  padding: 10px 30px;
+}
+/*===== Recruit ======*/
+.recruit{
+  padding-bottom: 30px;
+}
+.recruit_board{
+  width: 95%;
+  padding-bottom: 10px;
+}
+.recruit_board *{
+  letter-spacing: 5px;
+}
+/*===== CONTACT =====*/
+.contact{
+  padding-bottom: 10px;
+}
+.contact h2{
+  font-size: 16px;
+}
+.contact_board{
+  width: 100%;
+}
+.form{
+  padding-top: 20px;
+}
+
+.what{
+  width: 35%;
+  padding-right: 10px;
+}
+.contact_submit input{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.line{
+  padding-left: 5px;
+  width: 50%;
+}
+
+
+/*===== FOOTER =====*/
+.footer{
+  height:auto;
+}
+.logo_side{
+  float: left;
+}
+.network{
+  width: 40%  !important;
+  float: right;
+}
+.back_side{
+  width: 100% !important;
+}
+
+
+
+}
 /*--------------------------------*/
 .clearfix:before,.clearfix:after {
 content: " ";

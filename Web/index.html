@@ -2,12 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sun2Diner</title>
     <link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
@@ -20,7 +22,9 @@
   <body>
     <header>
       <div class="banner">
-        <video src="video/sun2diner.mp4" autoplay poster="images/food_bg.png" loop muted="true">  </video>
+        <video src="video/sun2diner.mp4" autoplay poster="video/sun2diner.gif" loop muted="true">  </video>
+        <img class = "gif_image" src="video/sun2diner.gif" alt="">
+        <a href="#"><img class = "sandwich" src="images/sandwich.png" alt=""></a>
         <div class="logo">
           <img src="images/logo_color.png" alt="">
         </div>
@@ -44,7 +48,10 @@
             <h2>This is the</h2>
             <h3>description</h3>
             <h4>of burger</h4>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes </p>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes </p> -->
+            <div class="plain_text plain_text_food">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,  </p>
+            </div>
             <div class="button">
               <input type="button" name="menu" value="MENU">
             </div>
@@ -60,7 +67,7 @@
                 <h2>This is the</h2>
                 <h3>description</h3>
                 <h4>of beer</h4>
-                <div class="plain_text">
+                <div class="plain_text plain_text_drink">
                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,  </p>
                 </div>
                   <div class="button">
@@ -79,19 +86,19 @@
         <h1>make a reservation</h1>
         <select class="people" name="">
             <option value="1 people">2 people</option>
-            <option value="2 people">2 people</option>
+            <option value="2 people">4 people</option>
         </select><!--
         --><select class="date" name="">
           <option value="Dec 1, 2016">Dec 1, 2016</option>
-          <option value="Dec 2, 2016">2 people</option>
+          <option value="Dec 2, 2016">Dec 2, 2016</option>
         </select><!--
         --><select class="time" name="">
             <option value="11:00 PM">11:00 PM</option>
-            <option value="12:00 PM">2 people</option>
+            <option value="12:00 PM">12:00 PM</option>
         </select><!--
       --><select class="table" name="">
           <option value="FIND A TABLE">FIND A TABLE</option>
-          <option value="FIND A TABLE">2 people</option>
+          <option value="FIND 2 TABLES">FIND 2 TABLES</option>
         </select>
 
       </div>
@@ -105,24 +112,29 @@
           <a href="#"><img class = "right_arrow clearfix" src="images/right_arrow.png" alt="" /></a>
         </div>
         <img class= "news_tag" src="images/news_tag.png" alt="">
+        <img class= "news_tag_mobile" src="images/news_tag_mobile.png" alt="">
       </div>
       <div class="news_text">
         <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,"</p>
+      </div>
+      <div class="sub_news_arrow clearfix">
+        <a href="#"><img class = "left_arrow clearfix" src="images/left_arrow.png" alt="" /></a>
+        <a href="#"><img class = "right_arrow clearfix" src="images/right_arrow.png" alt="" /></a>
       </div>
     </div>
 
     <div class="photos">
       <img class= "photos_tittle tittle" src="images/photo_tittle.png" alt="">
       <div class="gallery">
-          <img class= "" src="images/photo_1.png" alt="">
-          <img class= "" src="images/photo_2.png" alt="">
-          <img class= "" src="images/photo_3.png" alt="">
-          <img class= "" src="images/photo_4.png" alt="">
-          <img class= "" src="images/photo_5.png" alt="">
-          <img class= "" src="images/photo_6.png" alt="">
-          <img class= "" src="images/photo_7.png" alt="">
-          <img class= "" src="images/photo_8.png" alt="">
-          <img class= "" src="images/photo_9.png" alt="">
+          <img class= "" src="images/aphoto_1.png" alt="">
+          <img class= "" src="images/aphoto_2.png" alt="">
+          <img class= "" src="images/aphoto_3.png" alt="">
+          <img class= "" src="images/aphoto_4.png" alt="">
+          <img class= "" src="images/aphoto_5.png" alt="">
+          <img class= "" src="images/aphoto_6.png" alt="">
+          <img class= "" src="images/aphoto_7.png" alt="">
+          <img class= "" src="images/aphoto_8.png" alt="">
+          <img class= "" src="images/aphoto_9.png" alt="">
       </div>
       <div class="photo_arrow">
           <a href="#"><img class= "" src="images/photo_left_arrow.png" alt=""></a>
@@ -139,14 +151,34 @@
               <p>Sun,Sat, Holiday</p>
               <p>Wed</p>
             </div>
-            <div class="time info">
-              <p>11.00 ~ 15.00     18.00 ~ 23.00 (LO 22.00)</p>
-              <p>11.00 ~ 18.00 (LO 17.30)     18.00 ~ 23.00 (LO 22.00)</p>
+            <div class="time info info1">
+              <p>11.00 ~ 15.00 </p>
+              <p>11.00 ~ 18.00 (LO 17.30)</p>
+              <p>regular closing day</p>
+            </div>
+            <div class="time  info info2">
+              <p>18.00 ~ 23.00 (LO 22.00)</p>
+              <p>18.00 ~ 23.00 (LO 22.00)</p>
+            </div>
+          </div>
+          <div class="schedule_mobile">
+            <div class="date1_mobile info_mobile">
+              <p>Mon-Fri</p>
+              <p>11.00 ~ 15.00 </p>
+              <p>18.00 ~ 23.00 (LO 22.00)</p>
+            </div>
+            <div class="date2_mobile info_mobile">
+              <p>Sun,Sat, Holiday</p>
+              <p>11.00 ~ 18.00 (LO 17.30)</p>
+              <p>18.00 ~ 23.00 (LO 22.00)</p>
+            </div>
+            <div class="date2_mobile info_mobile">
+              <p>Wed</p>
               <p>regular closing day</p>
             </div>
           </div>
          <div class="address">
-              <p class = "num_text"><img src="images/pin.png" alt="">  〒153-0051  東京都目黒区上目黒2-43-11　小川ビル１F</p>
+              <p class = "num_text"><img src="images/pin.png" alt="">  〒153-0051  東京都目黒区上目黒2-43-11 小川ビル１F</p>
               <p class = "num_text"><img src="images/telephone.png" alt=""> 03-5724-3330</p>
           </div>
           <div class="button">
@@ -169,78 +201,64 @@
     <div class="contact">
         <img class= "contact_tittle tittle" src="images/contact_tittle.png" alt="">
         <div class="contact_board">
-
-          <!-- <section class = "text_line">
-            <h2>お名前</h2>
-            <h2>ふりがな</h2>
-            <h2>メールアドレス</h2>
-            <h2>電話番号</h2>
-            <h2>お問合わせ内容</h2>
-          </section>
-
-        <section class = "fill_line">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </section> -->
           <div class="form">
             <div class="what">
               <h2>お名前</h2>
             </div>
-            <div class="line"></div>
+            <input class="line" type="text" name="" value="">
+            <!-- <div class="line"></div> -->
           </div>
 
           <div class="form">
             <div class="what">
               <h2>ふりがな</h2>
             </div>
-            <div class="line"></div>
+              <input  class="line" type="text" name="" value="">
+            <!-- <div class="line"></div> -->
           </div>
 
           <div class="form">
             <div class="what">
             <h2>メールアドレス</h2>
             </div>
-            <div class="line"></div>
+              <input  class="line" type="text" name="" value="">
+            <!-- <div class="line"></div> -->
           </div>
 
           <div class="form">
             <div class="what">
               <h2>電話番号</h2>
             </div>
-            <div class="line"></div>
+              <input  class="line" type="text" name="" value="">
+            <!-- <div class="line"></div> -->
           </div>
 
           <div class="form form_last">
             <div class="what">
                 <h2>お問合わせ内容</h2>
             </div>
-            <div class="line"></div>
+              <input  class="line" type="text" name="" value="">
+            <!-- <div class="line"></div> -->
           </div>
 
-          <div class="button">
+          <div class="button contact_submit">
             <input type="submit" name="submit" value="SUBMIT">
           </div>
         </div>
     </div>
 
     <div class="footer">
-      <div class="logo_side">
+      <div class="logo_side clearfix">
           <img src="images/logo_footer.png" alt="">
       </div>
-      <div class="network">
-        <img src="images/facebook_logo.png" alt="">
-        <img src="images/instagram_logo.png" alt="">
-        <img src="images/twitter_logo.png" alt="">
+      <div class="network clearfix">
+        <a href="#"><img src="images/facebook_logo.png" alt=""></a>
+        <a href="#"><img src="images/instagram_logo.png" alt=""></a>
+        <a href="#"><img src="images/twitter_logo.png" alt=""></a>
       </div>
-      <div class="back_side">
+      <div class="back_side clearfix">
         <a href="#"><p>back to top</p></a>
       </div>
-
-
     </div>
-
   </body>
 </html>
