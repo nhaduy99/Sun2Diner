@@ -1002,20 +1002,6 @@ nav{
 .news_arrow{
   display: none;
 }
-
-/*.news_tag{
-display: none;
-}*/
-/*.news_tag_mobile{
-  display: block;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}*/
-/*.news_text{
-  width: 90%;
-  margin: 0 auto;
-}*/
 .news_text p{
   padding-bottom: 30px;
 }
@@ -1043,21 +1029,31 @@ display: none;
 .map{
   height: 600px;
 }
-.schedule{
+/*.schedule{
   width: 100%;
   padding-top: 85px;
   padding-bottom: 50px;
   padding-left: 5px;
+}*/
+.window{
+  display: none;
+}
+.schedule_mobile{
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info_mobile{
+    padding-top: 10px;
+    border-bottom: 1px solid white;
+}
+.info_mobile p{
+  margin: 0;
+  padding:0;
 }
 .schedule div{
   vertical-align: top;
-}
-
-.date{
-  width: 25%;
-}
-.time{
-  width: 30%;
 }
 
 .map p{
