@@ -4,6 +4,13 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
     $('.navi').toggleClass('open');
 	});
+	$(".back_side").click(function() {$('html, body').animate({scrollTop: $(".banner").offset().top}, 1200);	});
+	$("#food_nav").click(function() {$('html, body').animate({scrollTop: $(".food_drink").offset().top}, 1200);	});
+	$("#drink_nav").click(function() {$('html, body').animate({scrollTop: $(".drink").offset().top}, 1200);});
+	$("#news_nav").click(function() {$('html, body').animate({scrollTop: $(".news").offset().top}, 1200);});
+	$("#photos_nav").click(function() {$('html, body').animate({scrollTop: $(".photos").offset().top}, 1200);});
+	$("#access_nav").click(function() {$('html, body').animate({scrollTop: $(".access").offset().top}, 1200);});
+  $("#recruit_nav").click(function() {$('html, body').animate({scrollTop: $(".recruit").offset().top}, 1200);});
 });
 
 // Using this for Carousel Sliding for News
